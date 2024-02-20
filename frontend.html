@@ -3,6 +3,8 @@
 <head>
    <title>Dribbble</title>
    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
    
@@ -54,10 +56,10 @@
         
     </div>
     </section>
-        <div class="flex justify-around flex-wrap mx-auto max-w-5xl">
+    <div class="flex justify-around mt-10">
         
             <!-- Box 1 -->
-            <div class="w-1/4 bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-1/5 bg-white shadow-lg rounded-lg overflow-hidden m-1">
                 <img src="image1.jpg" alt="Image 1" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="font-bold text-lg mb-2">Zurich: renovation works at Chreck-In 1</h3>
@@ -67,7 +69,7 @@
                 </div>
             </div>
             <!-- Box 2 -->
-            <div class="w-1/4 bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-1/5 bg-white shadow-lg rounded-lg overflow-hidden m-1">
                 <img src="image2.jpg" alt="Image 2" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="font-bold text-lg mb-2">Stay Connected</h3>
@@ -77,7 +79,7 @@
                 </div>
             </div>
             <!-- Box 3 -->
-            <div class="w-1/4 bg-white shadow-lg rounded-lg overflow-hidden ">
+            <div class="w-1/5 bg-white shadow-lg rounded-lg overflow-hidden m-1">
                 <img src="image3.jpg" alt="Image 3" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="font-bold text-lg mb-2">Online check-In</h3>
@@ -87,7 +89,7 @@
                 </div>
             </div>
             <!-- Box 4 -->
-            <div class="w-1/4 bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-1/5 bg-white shadow-lg rounded-lg overflow-hidden m-1">
                 <img src="image4.jpg" alt="Image 4" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="font-bold text-lg mb-2">Entry regulations worldwide</h3>
@@ -98,13 +100,13 @@
             </div>
         
         </div><br><br>
-        <div>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <div class="ml-7">
+            <button class="bg-red-700 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 More Offers
             </button>
         </div>
         <form>
-            <div class="border-solid border-2 border-fuchsia-600 ... flex flex-row">Elegant Contact Form
+            <div class=" flex flex-row text-gray-400 bg-neutral-100 text-center">Elegant Contact Form
             <label class="block">
              
               <div>
@@ -128,12 +130,17 @@
               "/>
               </div>
               <div>
-              <input type="text" value="Message" disabled class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+              <input type="textbox" value="Message" disabled class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
               focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
               disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
               invalid:border-pink-500 invalid:text-pink-600
               focus:invalid:border-pink-500 focus:invalid:ring-pink-500
             "/>
+            </div>
+            <div>
+                <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                    Submit
+                </button>
             </div>
             </label>
             </div>
@@ -142,11 +149,11 @@
     </div>
     
     </body>
-    <footer class="text-gray-600 body-font">
-      <div class="flex flex flex-row">
+    <footer class="text-white bg-black">
+        <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-0.5">
         <div>
         <ul>
-            <li>Dropbox</li><br>
+            <li class="font-bold text-xl">Dropbox</li><br>
             <li>Desktop app</li>
             <li>Mobile app</li>
             <li>Integrations</li>
@@ -159,7 +166,7 @@
        </div>
        <div>
         <ul>
-            <li>Products</li><br>
+            <li class="font-bold text-xl">Products</li><br>
             <li>Plus</li>
             <li>Professional</li>
             <li>Business</li>
@@ -174,7 +181,7 @@
        </div>
        <div>
         <ul>
-            <li>Features</li><br>
+            <li class="font-bold text-xl">Features</li><br>
             <li>Send large files</li>
             <li>Send long videos</li>
             <li>Cloud photo storage</li>
@@ -189,7 +196,7 @@
        </div>
        <div>
         <ul>
-            <li>Support</li><br>
+            <li class="font-bold text-xl">Support</li><br>
             <li>Help center</li>
             <li>Contact us</li>
             <li>Privacy & terms</li>
@@ -202,7 +209,7 @@
        </div>
        <div>
         <ul>
-            <li>Resources</li><br>
+            <li class="font-bold text-xl">Resources</li><br>
             <li>Blog</li>
             <li>Customer stories</li>
             <li>Resources library</li>
@@ -215,6 +222,20 @@
         </ul>
        </div>
        </div>
+       <div id="contact" class="basis-1/3 py-2"> 
+        <a href= "https://twitter.com/login" class="fa fa-twitter ml-4" style="font-size:20px" target="_blank"> </a>
+        <a href= "https://web.facebook.com/?_rdc=1&_rdr" class="fa fa-facebook ml-4" style="font-size:20px" target="_blank"> </a>
+        <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube-play ml-4" style="font-size:30px"> </a>
+        <hr>
+        <div class="flex items-center">
+            
+            <span class="ml-2">&#x25BC;</span> <!-- Unicode for downward arrow -->
+            <p>English (united states)</p>
+          </div>
+          
+       
+       </div>
+      
     </footer>
 
 </html>

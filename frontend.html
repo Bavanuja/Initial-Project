@@ -5,21 +5,16 @@
    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-    <header>
-        <nav class="bg-white text-white p-4">
-            
-        </nav>
-        </header>
-    
+   
     
     <body>
-    <div class="flex flex-col bg-white">
-        <div class="bg-gray">
+    <div class="flex flex-col">
+    <section class="bg-neutral-100 mt-10">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Brand name and navigation tags on the left -->
             <div class="flex items-center">
-                <div class="mr-8 font-bold text-xl">Dribbble</div>
-                <div class="flex">
+                <div class="w-20 mr-2"><img src="dribbble.png"></div>
+                <div class="flex font-bold font-sans">
                     <a href="#" class="mx-2 hover:text-gray-300">Find talent</a>
                     <a href="#" class="mx-2 hover:text-gray-300">Inspiration</a>
                 <div class="dropdown relative mx-2">
@@ -32,33 +27,43 @@
     
             <!-- Search bar and login button on the right -->
             <div class="flex items-center">
-                <input type="search" placeholder="Search..." 
-                       class="px-4 py-1 rounded mr-4 text-black" />
-                       <a href="#" class="mx-2 hover:text-gray-300">Log in</a>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <div class="relative justify-between gap-4">
+                    <input type="text" placeholder="      Search..." class="p-2  rounded-full mt-2 ml-4 focus:outline-none">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                      <svg class="w-5  ml-2 mt-1 h-5 mt-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-5.2-5.2"></path>
+                          <circle cx="10" cy="10" r="7"></circle>
+                      </svg>
+                  </div>
+                  </div>
+                       <a href="#" class="mx-2 hover:text-gray-300 font-serif">Log in</a>
+                <button class="bg-black hover:bg-black text-white py-1 px-4 rounded-full font-serif">
                     Sign up
                 </button>
             </div>
-        </div><br><br><br><br>
-        <div class="text-center ">
-            <div class="ring-2 ring-offset-2 ring-offset-fuchsia-300 hover:ring-offset-fuchsia-500 bg-zinc-400 font-serif">
-                Over 3 million ready-to-work creatives!
+        </div>
+        <div class="text-center">
+            <div class="pt-20">
+                <button class="rounded-full bg-slate-300 lg:w-1/4" >Over 3 million ready-to-work creatives! <button>
             </div><br><br>
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">The world's destination <br> for design</h1><br><br>
+            <h1 class="text-6xl font-serif  mb-4">The world's destination <br> for design</h1>
             <p class="text-gray-600">Get inspired by the work of millions of top-related designers & agencies around the world</p><br><br>
             <div class="flex justify-center">
-                <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get started</button>
+                <button class="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-black rounded-full text-lg mb-10">Get started</button>
             </div>
-        </div>
-    </div><br>
-        <div class="flex justify-around flex-wrap mx-auto max-w-4xl">
+        
+    </div>
+    </section>
+        <div class="flex justify-around flex-wrap mx-auto max-w-5xl">
         
             <!-- Box 1 -->
             <div class="w-1/4 bg-white shadow-lg rounded-lg overflow-hidden">
                 <img src="image1.jpg" alt="Image 1" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="font-bold text-lg mb-2">Zurich: renovation works at Chreck-In 1</h3>
-                    <p>Baggage check for Economy and Premium Economy Class temporarily relocated to Check-in-3</p>
+                    <p class="mb-1">Baggage check for Economy and Premium Economy Class temporarily relocated to Check-in-3</p>
+                    <hr>
+                    <p class="mt-2">More information</p>
                 </div>
             </div>
             <!-- Box 2 -->
@@ -66,15 +71,19 @@
                 <img src="image2.jpg" alt="Image 2" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="font-bold text-lg mb-2">Stay Connected</h3>
-                    <p>Buy a SWISS eSIM data bundle and save on roaming charges on your next trip</p>
+                    <p class="mb-12">Buy a SWISS eSIM data bundle and save on roaming charges on your next trip</p>
+                    <hr>
+                    <p class="mt-2">More info about the eSIM</p>
                 </div>
             </div>
             <!-- Box 3 -->
-            <div class="w-1/4 bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-1/4 bg-white shadow-lg rounded-lg overflow-hidden ">
                 <img src="image3.jpg" alt="Image 3" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="font-bold text-lg mb-2">Online check-In</h3>
-                    <p>Check in for your next flight convenirntly at home or the office.</p>
+                    <p class="mb-10">Check in for your next flight convenirntly at home or the office.</p>
+                    <hr>
+                    <p class="mt-2">To online check-in</p>
                 </div>
             </div>
             <!-- Box 4 -->
@@ -82,7 +91,9 @@
                 <img src="image4.jpg" alt="Image 4" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="font-bold text-lg mb-2">Entry regulations worldwide</h3>
-                    <p>Enquire about the entry regulations for your destination in good time.</p>
+                    <p class="mb-4">Enquire about the entry regulations for your destination in good time.</p>
+                    <hr>
+                    <p class="mt-2">Entry regulations worldwide</p>
                 </div>
             </div>
         
